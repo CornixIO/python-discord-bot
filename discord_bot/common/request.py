@@ -1,7 +1,6 @@
 import requests
 
-from discord_bot.common.exceptions import TooManyRequests
-from exceptions import CODE_TO_EXCEPTION
+from discord_bot.common.exceptions import TooManyRequests, CODE_TO_EXCEPTION
 
 
 class Request(object):
