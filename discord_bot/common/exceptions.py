@@ -13,7 +13,12 @@ class DiscordUnknownChannel(Exception):
     pass
 
 
+class DiscordUnauthorized(Exception):
+    pass
+
+
 CODE_TO_EXCEPTION = {
     50001: DiscordMissingAccess,
+    50007: DiscordUnauthorized,
     10003: DiscordUnknownChannel
 }
